@@ -1,3 +1,5 @@
+#!/bin/bash
+# Maintener: yzhao@redhat.com
 kubectl delete -f heapster-deployment.yaml 
 kubectl delete -f heapster-service.yaml 
 kubectl delete -f influxdb-deployment.yaml
