@@ -12,10 +12,10 @@ gpgcheck=1
 repo_gpgcheck=1
 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
         https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-EOF
+EOF```
 
 
-`setenforce 0`
+* `setenforce 0`
 
 
 *  ``` yum install -y http://yum.kubernetes.io/pool/082436e6e6cad1852864438b8f98ee6fa3b86b597554720b631876db39b8ef04-kubeadm-1.6.0-0.alpha.0.2074.a092d8e0f95f52.x86_64.rpm \
@@ -38,4 +38,4 @@ systemctl enable kubelet && systemctl start kubelet ```
 * ```sh start.sh``` to deploy heapster+InfluxDB+grafana(the master node don't scheduler the relevant pod on the master host, so need to add another host as node to run these pods)
 
 * *** Also you can pre-pull some relevant images if needed. List here:
-docker-images.md*** 
+docker-images.md***
