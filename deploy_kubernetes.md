@@ -3,16 +3,7 @@
 ## Version : v1.5.4
 
 
-```cat <<EOF > /etc/yum.repos.d/kubernetes.repo
-[kubernetes]
-name=Kubernetes
-baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64
-enabled=1
-gpgcheck=1
-repo_gpgcheck=1
-gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
-        https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-EOF```
+*  ``` cp kubernetes.repo /etc/yum.repos.d/ ```
 
 
 * `setenforce 0`
