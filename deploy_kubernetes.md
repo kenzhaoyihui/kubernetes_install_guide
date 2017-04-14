@@ -2,8 +2,8 @@
 
 ## Version : v1.5.4
 
-*  ```
-cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+
+```cat <<EOF > /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
 name=Kubernetes
 baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64
