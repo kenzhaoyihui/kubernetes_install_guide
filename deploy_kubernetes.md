@@ -17,8 +17,7 @@
 
 * ``` yum install -y docker ```
 
-* ``` systemctl enable docker && systemctl start docker
-systemctl enable kubelet && systemctl start kubelet ```
+* ``` systemctl enable docker && systemctl start docker  systemctl enable kubelet && systemctl start kubelet ```
 
 * ``` kubeadm init --use-kubernetes-version=v1.5.4 --api-advertise-addresses=10.10.10.10 --pod-network-cidr=10.254.0.0/16 --token abcdef.1234567890123456 ```
 
